@@ -7,6 +7,7 @@
     <template v-if="audio">
       <player :audioSrc="audio.audioSrc" :duration="audio.duration" :title="audio.title"></player>
     </template>
+    <div style="height:1px;"></div>
     <wv-picker :visible.sync="pickerShow" :columns="audioNames"
                value-key="name" @confirm="confirmPicker"/>
   </div>
